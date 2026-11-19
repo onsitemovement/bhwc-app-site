@@ -1,0 +1,28 @@
+:root { --cream:#F8F1E3; --tan:#E7D2B4; --olive:#69602E; --ink:#221E15; --muted:#6B6455; --rose:#C88989; --line:#DCD0BA; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif; font-weight: 500; font-size: 20px; line-height: 1.55; }
+a { color: var(--olive); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--olive); outline-offset: 2px; }
+header, main, footer { width: 100%; max-width: 760px; margin: 0 auto; padding-inline: 22px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 22px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--olive); font-weight: 700; font-size: 1.15rem; }
+.brand img { height: 52px; width: auto; }
+nav { display: flex; gap: 20px; font-size: 1.05rem; }
+nav a { font-weight: 600; }
+main { padding-block: 24px 56px; display: flex; flex-direction: column; gap: 34px; }
+h1, h2 { color: var(--olive); line-height: 1.12; margin: 0; text-wrap: balance; }
+h1 { font-size: 2.9rem; font-weight: 700; }
+h2 { font-size: 1.7rem; font-weight: 700; }
+h3 { color: var(--olive); font-size: 1.2rem; margin: 22px 0 4px; }
+p { margin: 0; }
+.lede { font-size: 1.35rem; font-style: italic; color: var(--muted); }
+.panel { background: var(--tan); border-radius: 16px; padding: 22px 24px; display: flex; flex-direction: column; gap: 8px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; }
+.card h2 { font-size: 1.35rem; }
+.legal { display: flex; flex-direction: column; gap: 14px; }
+.legal ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.updated { color: var(--muted); font-size: 0.95rem; }
+footer { padding-block: 26px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 6px; }
+@media (max-width: 520px) { body { font-size: 18px; } h1 { font-size: 2.2rem; } }
